@@ -1,0 +1,63 @@
+ 🌐 How to Host Your Website on AWS S3 (Guide)
+
+This guide provides a simple overview for hosting a static website like this portfolio using **Amazon S3**.
+
+---
+
+ 📦 Step 1: Prepare Your Website Files
+
+- Create your website using HTML, CSS, JS.
+- Keep all files (including images, icons, etc.) in a single folder.
+
+---
+
+ ☁️ Step 2: Create an S3 Bucket
+
+- Go to [AWS S3 Console](https://s3.console.aws.amazon.com/s3/)
+- Click **Create Bucket**
+- Name it (e.g., `your-portfolio-bucket`)
+- Choose the region of your choice(nearest)-for us mostly the 'Asia Pacific (Mumbai) ap-south-1'
+- Uncheck **Block all public access** (important)
+
+---
+
+ 🧾 Step 3: Upload Website Files
+
+- Open your bucket
+- Click **Upload**
+- Drag and drop your entire website folder contents
+
+---
+
+ ⚙️ Step 4: Enable Static Website Hosting
+
+- Go to **Properties** tab
+- Scroll to **Static website hosting**
+- Enable it and enter:
+  - `index.html` as the index document
+  - `error.html` as the error document (optional)
+- Save changes
+
+---
+
+ 🔓 Step 5: Make Files Public(Add policy)
+
+- Go to the **Permissions** tab
+- Add a **Bucket Policy** like this:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadGetObject",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::your-portfolio-bucket/*"
+    }
+  ]
+}
+
+
+This file was noted side by side while doing the activity and might have contain some mistakes.
