@@ -30,6 +30,6 @@ This project helped me understand real-world cloud infrastructure basics and AWS
 
 
 ## 🧠 About Me
-Currently pursuing my B.E in Computer Engineering, building a foundation in Cloud Computing, DevOps, and AI Engineering.
+Building a foundation in Cloud Computing, DevOps, and AI Engineering.
 
 ---
