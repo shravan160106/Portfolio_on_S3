@@ -26,6 +26,7 @@ This project helped me understand real-world cloud infrastructure basics and AWS
 ## 📂 Tech Stack
 - HTML5(Basic)
 - AWS S3 for hosting
+- IAM Group working
 
 
 ## 🧠 About Me
