@@ -1,4 +1,4 @@
-# ☁️ Shravan's Cloud Portfolio
+# ☁️ Cloud Portfolio
 
 This is my personal portfolio website designed with a floating cloud theme and sky-blue aesthetic. It showcases my skills, projects, and contact info.
 
